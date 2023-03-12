@@ -4,6 +4,61 @@ html {
     user-select: none;
 }
 
+img {
+    display: none;
+    height: 20vw;
+}
+
+h1 {
+    font-family: 'Lora';
+    font-size: 4vw;
+}
+
+.list {
+    background-color: #eaeaea;
+    border-radius: 1vw;
+    padding: 1vw 2vw;
+
+    width: 20vw;
+
+    position: relative;
+    left: 50vw;
+    transform: translate(-50%);
+}
+
+label {
+    display: block;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked+.Fire_Keeper img,
+input[type="checkbox"]:checked+.The_Painter img,
+input[type="checkbox"]:checked+.Lady_Maria img {
+    display: block;
+}
+
+.Fire_Keeper,
+.The_Painter,
+.Lady_Maria {
+    border-bottom: solid 0.1vw #a8a8a8;
+}
+
+.Fire_Keeper:hover,
+.The_Painter:hover,
+.Lady_Maria:hover {
+    cursor: pointer;
+    border-bottom: none;
+}
+
+.Fire_Keeper:hover img,
+.The_Painter:hover img,
+.Lady_Maria:hover img {
+    display: block;
+}
+
 @font-face {
     font-family: 'Lora';
     src: url('../font/static/Lora-Italic.ttf') format('truetype');
