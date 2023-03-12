@@ -26,6 +26,37 @@ h1 {
     transform: translate(-50%);
 }
 
+
+.list i {
+    display: none;
+    font-size: 2vw;
+    position: absolute;
+    right: 2vw;
+    transform: translate(0, -2.5vw);
+}
+
+.list:hover .fa-plus {
+    display: block;
+}
+
+.list input[type="checkbox"]:checked+.Fire_Keeper span,
+.list input[type="checkbox"]:checked+.The_Painter span,
+.list input[type="checkbox"]:checked+.Lady_Maria span  {
+    color: black;
+}
+
+.list input[type="checkbox"]+.Fire_Keeper span,
+.list input[type="checkbox"]+.The_Painter span,
+.list input[type="checkbox"]+.Lady_Maria span  {
+    color: #4abbfe;
+}
+
+.list:hover input[type="checkbox"]+.Fire_Keeper span,
+.list:hover input[type="checkbox"]+.The_Painter span,
+.list:hover input[type="checkbox"]+.Lady_Maria span {
+    color: black;
+}
+
 label {
     display: block;
 }
@@ -40,6 +71,18 @@ input[type="checkbox"]:checked+.Lady_Maria img {
     display: block;
 }
 
+.list:hover input[type="checkbox"]:checked+.Fire_Keeper .fa-xmark,
+.list:hover input[type="checkbox"]:checked+.The_Painter .fa-xmark,
+.list:hover input[type="checkbox"]:checked+.Lady_Maria .fa-xmark {
+    display: block;
+}
+
+.list:hover input[type="checkbox"]:checked+.Fire_Keeper .fa-plus,
+.list:hover input[type="checkbox"]:checked+.The_Painter .fa-plus,
+.list:hover input[type="checkbox"]:checked+.Lady_Maria .fa-plus {
+    display: none;
+}
+
 .Fire_Keeper,
 .The_Painter,
 .Lady_Maria {
@@ -51,6 +94,18 @@ input[type="checkbox"]:checked+.Lady_Maria img {
 .Lady_Maria:hover {
     cursor: pointer;
     border-bottom: none;
+}
+
+.Fire_Keeper:hover .fa-plus,
+.The_Painter:hover .fa-plus,
+.Lady_Maria:hover .fa-plus {
+    display: none;
+}
+
+.Fire_Keeper:hover .fa-xmark,
+.The_Painter:hover .fa-xmark,
+.Lady_Maria:hover .fa-xmark {
+    display: block;
 }
 
 .Fire_Keeper:hover img,
