@@ -1,0 +1,10 @@
+html {
+    font-family: 'Lora';
+    font-size: 3vw;
+    user-select: none;
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: url('../font/static/Lora-Italic.ttf') format('truetype');
+}
